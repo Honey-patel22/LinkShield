@@ -1,0 +1,3 @@
+@model ScanRecord
+@{ ViewData["Title"] = "Delete scan"; }
+<section class="page-hero compact"><span class="eyebrow">CONFIRM ACTION</span><h1>Delete this <em>record?</em></h1><p>This removes the scan from the project database.</p></section><section class="panel delete-card"><span class="delete-icon">!</span><h2>@Model.Url</h2><p>Risk: <b>@Model.RiskLevel (@Model.RiskScore/100)</b> · @Model.ScannedAt.ToString("dd MMM yyyy, HH:mm")</p><form asp-action="Delete" method="post"><input type="hidden" asp-for="Id"/><button type="submit" class="btn btn-danger">Yes, delete record</button><a asp-action="Index" class="btn btn-outline">Keep record</a></form></section>

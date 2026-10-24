@@ -1,0 +1,18 @@
+@{ ViewData["Title"] = "Log in"; }
+<section class="auth-shell">
+  <div class="auth-visual">
+    <a class="auth-back" asp-controller="Home" asp-action="Index">← Back to LinkShield</a>
+    <div class="auth-visual-copy"><span class="eyebrow"><span class="pulse"></span> YOUR SAFER INTERNET STARTS HERE</span><h1>Good habits.<br/><em>Better clicks.</em></h1><p>Bring your recent checks together, learn from suspicious patterns, and browse with a little more confidence.</p></div>
+    <img class="auth-illustration" src="~/images/security-illustration.svg" alt="Illustration of a protective shield and link safety cards" />
+    <div class="auth-trust"><span>✦ Clear explanations</span><span>✦ Simple risk signals</span><span>✦ Built for awareness</span></div>
+  </div>
+  <div class="auth-form-side"><form method="post" asp-action="Login" class="panel auth-panel auth-panel-modern">
+    <div class="auth-mark">⌁</div><span class="eyebrow">WELCOME BACK</span><h2>Log in to your space</h2><p class="auth-subtitle">Pick up where your link-safety journey left off.</p>
+    @if(ViewBag.Error != null){<div class="auth-error">@ViewBag.Error</div>}
+    <label for="name">Your name</label><div class="input-with-icon"><span>♙</span><input id="name" name="name" class="form-control" required maxlength="100" placeholder="e.g. Honey" autocomplete="name"/></div>
+    <label for="email">Email address</label><div class="input-with-icon"><span>✉</span><input id="email" name="email" type="email" class="form-control" required placeholder="you@example.com" autocomplete="email"/></div>
+    <button class="btn btn-primary full-btn auth-submit" type="submit">Continue to dashboard <span>→</span></button>
+    <div class="auth-divider"><span>NEW TO LINKSHIELD?</span></div><a class="btn btn-outline auth-create" asp-action="Register">Create a demo profile</a>
+    <p class="tiny-note">Coursework demo sign-in uses session state. Do not enter real account credentials.</p>
+  </form><div class="auth-side-note"><span>✳</span><p><b>Stay curious, stay careful.</b><br/>A link can look familiar and still be misleading.</p></div></div>
+</section>

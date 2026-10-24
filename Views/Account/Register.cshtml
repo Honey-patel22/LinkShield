@@ -1,0 +1,19 @@
+@{ ViewData["Title"] = "Create profile"; }
+<section class="auth-shell">
+  <div class="auth-visual">
+    <a class="auth-back" asp-controller="Home" asp-action="Index">← Back to LinkShield</a>
+    <div class="auth-visual-copy"><span class="eyebrow"><span class="pulse"></span> START WITH A SMARTER CLICK</span><h1>Your safer-click<br/><em>workspace.</em></h1><p>Create a temporary profile to explore your dashboard, review scan history, and build better online habits.</p></div>
+    <img class="auth-illustration" src="~/images/security-illustration.svg" alt="Protective shield illustration for online safety" />
+    <div class="auth-trust"><span>✦ Scan history</span><span>✦ Helpful insights</span><span>✦ Threat learning</span></div>
+  </div>
+  <div class="auth-form-side"><form method="post" asp-action="Register" class="panel auth-panel auth-panel-modern">
+    <div class="auth-mark">⌁</div><span class="eyebrow">GET STARTED</span><h2>Create your profile</h2><p class="auth-subtitle">It takes a moment to get your demo workspace ready.</p>
+    @if(ViewBag.Error != null){<div class="auth-error">@ViewBag.Error</div>}
+    <label for="name">Full name</label><div class="input-with-icon"><span>♙</span><input id="name" name="name" class="form-control" required maxlength="100" placeholder="Your name" autocomplete="name"/></div>
+    <label for="email">Email address</label><div class="input-with-icon"><span>✉</span><input id="email" name="email" type="email" class="form-control" required placeholder="you@example.com" autocomplete="email"/></div>
+    <label for="password">Demo password</label><div class="input-with-icon"><span>♧</span><input id="password" name="password" type="password" minlength="6" class="form-control" required placeholder="At least 6 characters" autocomplete="new-password"/></div>
+    <button class="btn btn-primary full-btn auth-submit" type="submit">Create demo profile <span>→</span></button>
+    <p class="auth-switch">Already have a demo profile? <a asp-action="Login">Log in</a></p>
+    <p class="tiny-note">For coursework only: passwords are not stored or hashed. Never use a real password.</p>
+  </form><div class="auth-side-note"><span>✳</span><p><b>Learn as you go.</b><br/>Understand the warning signs instead of relying on a score alone.</p></div></div>
+</section>

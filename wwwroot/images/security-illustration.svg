@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="75" y1="55" x2="520" y2="465" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE8D4"/><stop offset="1" stop-color="#F5D5C3"/></linearGradient>
+    <linearGradient id="shield" x1="245" y1="88" x2="385" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFDF8"/><stop offset="1" stop-color="#DDEBE0"/></linearGradient>
+    <filter id="shadow" x="140" y="42" width="345" height="402" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <circle cx="310" cy="255" r="206" fill="url(#bg)" opacity=".72"/>
+  <circle cx="310" cy="255" r="170" stroke="#DCA98C" stroke-dasharray="4 10" opacity=".7"/>
+  <ellipse cx="310" cy="384" rx="133" ry="25" fill="#B75F3C" opacity=".12"/>
+  <path d="M310 74 419 117v101c0 81-49 144-109 176-60-32-109-95-109-176V117L310 74Z" fill="#B75F3C" opacity=".2" filter="url(#shadow)"/>
+  <path d="M310 78 413 119v95c0 76-46 134-103 165-57-31-103-89-103-165v-95L310 78Z" fill="#B75F3C"/>
+  <path d="M310 99 392 132v80c0 62-36 111-82 139-46-28-82-77-82-139v-80l82-33Z" fill="url(#shield)"/>
+  <path d="m271 218 27 27 55-62" stroke="#315C4B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="55" y="137" width="170" height="78" rx="18" fill="#FFFCF6" stroke="#E9D5C5"/>
+  <circle cx="83" cy="176" r="15" fill="#E0EEE2"/><path d="m76 176 5 5 9-11" stroke="#315C4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="169" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#293C33">Link checked</text><text x="108" y="188" font-family="Arial,sans-serif" font-size="10" fill="#788178">Signals reviewed</text>
+  <rect x="385" y="302" width="174" height="78" rx="18" fill="#FFFCF6" stroke="#E9D5C5"/>
+  <circle cx="415" cy="341" r="15" fill="#F9E3D7"/><path d="M415 333v10m0 5h.1" stroke="#B75F3C" stroke-width="3" stroke-linecap="round"/>
+  <text x="440" y="334" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#293C33">Think before</text><text x="440" y="351" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#293C33">you click</text>
+  <path d="m129 324 8-17 8 17 17 8-17 8-8 17-8-17-17-8 17-8Z" fill="#D9A846"/><path d="m489 112 5-11 5 11 11 5-11 5-5 11-5-11-11-5 11-5Z" fill="#D9A846"/>
+  <circle cx="489" cy="230" r="5" fill="#B75F3C"/><circle cx="150" cy="100" r="5" fill="#315C4B"/>
+</svg>
